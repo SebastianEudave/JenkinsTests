@@ -2,16 +2,13 @@ package test;
 
 import org.junit.Test;
 
+import static junit.framework.TestCase.assertEquals;
+
 public class Tests {
     @Test
     public void MavenParamTest(){
-        String browser = System.getProperty("browserName", "chrome");
+        String browser = System.getProperty("browserName", "Chrome");
 
-        if(browser.contains("chrome")){
-            System.out.println("Chrome");
-        }else
-        if(browser.contains("firefox")){
-            System.out.println("firefox");
-        }
+        assertEquals(browser,"Chrome");
     }
 }
