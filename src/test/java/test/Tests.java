@@ -9,6 +9,6 @@ public class Tests {
     public void MavenParamTest(){
         String browser = System.getProperty("browserName", "Chrome");
 
-        assertEquals(browser,"Chrome");
+        assertEquals("Chrome", browser);
     }
 }
